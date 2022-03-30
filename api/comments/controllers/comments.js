@@ -53,3 +53,7 @@ module.exports = {
     return sanitizeEntity(entity, { model: strapi.models.comments });
   },
 };
+
+// TEST IS-OWNER POLICY
+// CREATE A POST
+// TRY OUT IS-OWNER POLICY ON USER-PERMISSON!
