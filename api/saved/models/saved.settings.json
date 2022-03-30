@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "saveds",
+  "info": {
+    "name": "saved"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "type": "string",
+      "required": true
+    },
+    "username": {
+      "type": "string",
+      "required": true
+    },
+    "user": {
+      "via": "saveds",
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_follwers_followers",
+  "info": {
+    "name": "followers",
+    "icon": "align-justify"
+  },
+  "options": {},
+  "attributes": {
+    "username": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

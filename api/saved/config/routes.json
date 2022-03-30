@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/saveds",
+      "handler": "saved.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/saveds/count",
+      "handler": "saved.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/saveds/:id",
+      "handler": "saved.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/saveds",
+      "handler": "saved.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/saveds/:id",
+      "handler": "saved.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/saveds/:id",
+      "handler": "saved.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
