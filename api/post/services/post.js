@@ -21,4 +21,19 @@ module.exports = {
         "comments.user.picture",
       ]);
   },
+  findOne(params, populate) {
+    return strapi
+      .query("post")
+      .find(params, [
+        "user",
+        "user.picture",
+        "photo",
+        "likes",
+        "likes.user",
+        "likes.user.picture",
+        "comments",
+        "comments.user",
+        "comments.user.picture",
+      ]);
+  },
 };
