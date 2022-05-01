@@ -11,6 +11,7 @@ module.exports = {
       .query("post")
       .find(params, [
         "user",
+        "user.picture",
         "photo",
         "likes",
         "likes.user",
