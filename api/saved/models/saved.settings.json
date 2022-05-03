@@ -12,22 +12,14 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "image": {
-      "type": "string",
-      "required": true
-    },
-    "username": {
-      "type": "string",
-      "required": true
-    },
     "user": {
       "via": "saveds",
       "plugin": "users-permissions",
       "model": "user"
     },
-    "postId": {
-      "type": "integer",
-      "required": true
+    "post": {
+      "model": "post",
+      "via": "saveds"
     }
   }
 }

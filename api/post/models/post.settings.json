@@ -39,6 +39,10 @@
     "comments": {
       "via": "post",
       "collection": "comments"
+    },
+    "saveds": {
+      "via": "post",
+      "collection": "saved"
     }
   }
 }
